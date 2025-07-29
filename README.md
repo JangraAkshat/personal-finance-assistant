@@ -10,12 +10,19 @@ FinancePal is an intuitive and responsive MERN stack application that serves as 
 
 Core Features
 User Authentication: Secure user registration and login system using JWT.
+
 Full CRUD Functionality: Users can create, read, update, and delete their income and expense transactions.
+
 Dynamic Dashboard: All transactions are displayed in a paginated list and can be searched by description.
+
 Receipt Scanning (OCR): Upload an image or PDF of a receipt to automatically extract the store name and total amount.
+
 Custom Categories: Users can add and delete their own spending categories for personalized tracking.
+
 Data Visualization: An interactive pie chart provides a clear breakdown of expenses by category, showing both the total amount and percentage.
+
 Pagination: The transaction list API is paginated, sending only 10 items at a time for a fast and efficient user experience.
+
 Multi-User Support: The application supports multiple user accounts, with each user's data kept completely private and secure through JWT-based authorization.
 
 Tech Stack 🛠️
