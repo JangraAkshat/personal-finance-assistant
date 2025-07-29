@@ -2,12 +2,12 @@
 
 A full-stack web application designed to help users track, manage, and understand their financial activities.
 
-Project Overview
+## Project Overview
 
 FinancePal is an intuitive and responsive MERN stack application that serves as a personal finance tracker. It allows users to create secure accounts, log income and expenses, and visualize their spending habits through an interactive dashboard. A key feature is the ability to automatically extract transaction details by uploading a receipt (image or PDF), simplifying the process of data entry. The application is built with a decoupled architecture, featuring a React frontend and a Node.js/Express REST API, with all data persisted in a MongoDB database.
 
 
-Core Features
+## Core Features
 
 User Authentication: Secure user registration and login system using JWT.
 
@@ -27,7 +27,7 @@ Multi-User Support: The application supports multiple user accounts, with each u
 
 
 
-Tech Stack 
+## Tech Stack 
 
 Frontend: React.js, Axios, Chart.js
 
@@ -41,13 +41,13 @@ File Processing: Multer, Sharp (for image processing), PDF-Parse, Tesseract.js (
 
 
 
-Getting Started (Setup & Installation)
+## Getting Started (Setup & Installation)
 
 To get a local copy up and running, follow these simple steps.
 
 
 
-Prerequisites
+## Prerequisites
 
 Node.js and npm
 
@@ -57,7 +57,7 @@ Git
 
 
 
-Installation
+## Installation
 
 Clone the repository:
 
@@ -69,7 +69,7 @@ cd personal-finance-assistant
 
 
 
-Install all dependencies:
+## Install all dependencies:
 
 This project uses a unified structure, so you only need to run the install command once from the root directory.
 
@@ -79,14 +79,14 @@ npm install
 
 
 
-Set Up Environment Variables:
+## Set Up Environment Variables:
 
 Create a file named .env in the root of the project.
 
 
 
 
-Run the application:
+## Run the application:
 
 This command will start both the backend server and the frontend React app concurrently.
 
