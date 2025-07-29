@@ -5,9 +5,177 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6;
+  color: #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  color: #007bff;
+}
+
+nav button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #0056b3;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+}
+
+form h3 {
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Layout */
+.dashboard-layout, .auth-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-layout {
+    grid-template-columns: 350px 1fr;
+  }
+}
+
+.auth-layout {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+/* Transaction List */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Chart Container */
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* UPDATED: Increased size */
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Custom styles for the date input field */
+.date-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 0.75rem; /* 12px */
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.date-input-container:focus-within {
+  border-color: #4f46e5; /* Corresponds to focus:border-indigo-500 */
+  box-shadow: 0 0 0 1px #4f46e5;
+}
+
+.date-input-container input[type="date"] {
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.date-input-container input[type="date"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Hides the default browser calendar icon */
+.date-input-container input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.date-input-icon {
+  font-size: 1.25rem; /* 20px */
+  color: #6b7280; /* gray-500 */
 }
