@@ -1,10 +1,14 @@
 FinancePal - Personal Finance Assistant
+
 A full-stack web application designed to help users track, manage, and understand their financial activities.
 
 Project Overview
+
 FinancePal is an intuitive and responsive MERN stack application that serves as a personal finance tracker. It allows users to create secure accounts, log income and expenses, and visualize their spending habits through an interactive dashboard. A key feature is the ability to automatically extract transaction details by uploading a receipt (image or PDF), simplifying the process of data entry. The application is built with a decoupled architecture, featuring a React frontend and a Node.js/Express REST API, with all data persisted in a MongoDB database.
 
+
 Core Features
+
 User Authentication: Secure user registration and login system using JWT.
 
 Full CRUD Functionality: Users can create, read, update, and delete their income and expense transactions.
