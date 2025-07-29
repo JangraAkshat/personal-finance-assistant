@@ -1,7 +1,5 @@
 const User = require('../models/userModel.js');
 
-// @desc    Get all categories for the logged-in user
-// @route   GET /api/categories
 const getCategories = async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
@@ -15,8 +13,6 @@ const getCategories = async (req, res) => {
     }
 };
 
-// @desc    Add a new category
-// @route   POST /api/categories
 const addCategory = async (req, res) => {
     const { category } = req.body;
     if (!category) {
@@ -40,8 +36,6 @@ const addCategory = async (req, res) => {
     }
 };
 
-// @desc    Delete a category
-// @route   DELETE /api/categories
 const deleteCategory = async (req, res) => {
     const { category } = req.body;
     if (!category) {

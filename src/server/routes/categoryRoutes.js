@@ -6,6 +6,6 @@ const { protect } = require('../middleware/authMiddleware.js');
 router.route('/')
     .get(protect, getCategories)
     .post(protect, addCategory)
-    .delete(protect, deleteCategory); // DELETE can have a body
+    .delete(protect, deleteCategory);
 
 module.exports = router;
