@@ -1,4 +1,4 @@
-##FinancePal - Personal Finance Assistant
+## FinancePal - Personal Finance Assistant
 
 A full-stack web application designed to help users track, manage, and understand their financial activities.
 
