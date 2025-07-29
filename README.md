@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Understood. I have removed any mention of the company name and the live demo link.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here is the final, updated README.md file for your project.
 
-## Available Scripts
+FinancePal - Personal Finance Assistant
+A full-stack web application designed to help users track, manage, and understand their financial activities.
 
-In the project directory, you can run:
+Project Overview 📖
+FinancePal is an intuitive and responsive MERN stack application that serves as a personal finance tracker. It allows users to create secure accounts, log income and expenses, and visualize their spending habits through an interactive dashboard. A key feature is the ability to automatically extract transaction details by uploading a receipt (image or PDF), simplifying the process of data entry. The application is built with a decoupled architecture, featuring a React frontend and a Node.js/Express REST API, with all data persisted in a MongoDB database.
 
-### `npm start`
+Core Features ✨
+User Authentication: Secure user registration and login system using JWT.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Full CRUD Functionality: Users can create, read, update, and delete their income and expense transactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dynamic Dashboard: All transactions are displayed in a paginated list and can be searched by description.
 
-### `npm test`
+Receipt Scanning (OCR): Upload an image or PDF of a receipt to automatically extract the store name and total amount.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Custom Categories: Users can add and delete their own spending categories for personalized tracking.
 
-### `npm run build`
+Data Visualization: An interactive pie chart provides a clear breakdown of expenses by category, showing both the total amount and percentage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bonus Features Implemented ⭐
+Pagination: The transaction list API is paginated, sending only 10 items at a time for a fast and efficient user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Multi-User Support: The application supports multiple user accounts, with each user's data kept completely private and secure through JWT-based authorization.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tech Stack 🛠️
+Frontend: React.js, Axios, Chart.js
+Backend: Node.js, Express.js
+Database: MongoDB with Mongoose
+Authentication: JSON Web Tokens (JWT)
+File Processing: Multer, Sharp (for image processing), PDF-Parse, Tesseract.js (for OCR)
 
-### `npm run eject`
+Getting Started (Setup & Installation)
+To get a local copy up and running, follow these simple steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Prerequisites
+Node.js and npm
+MongoDB (a local server or a free MongoDB Atlas account)
+Git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installation
+Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bash:
+git clone https://github.com/JangraAkshat/personal-finance-assistant
+cd personal-finance-assistant
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install all dependencies:
+This project uses a unified structure, so you only need to run the install command once from the root directory.
+Bash:
+npm install
 
-## Learn More
+Set Up Environment Variables:
+Create a file named .env in the root of the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the application:
+This command will start both the backend server and the frontend React app concurrently.
+Bash:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Your application will be available at http://localhost:3000.

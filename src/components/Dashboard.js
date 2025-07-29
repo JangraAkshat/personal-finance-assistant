@@ -194,7 +194,7 @@ function Dashboard() {
         const token = JSON.parse(localStorage.getItem('userInfo')).token;
         const config = { headers: { Authorization: `Bearer ${token}` } };
         try {
-            setError(''); // Clear previous errors
+            setError('');
             const [transRes, summaryRes, catRes] = await Promise.all([
                 axios.get(`/api/transactions?page=${page}&search=${searchQuery}`, config),
                 axios.get('/api/transactions/summary', config),
@@ -207,11 +207,12 @@ function Dashboard() {
             if (catRes.data.length > 0 && !form.category) {
                 setForm(prev => ({...prev, category: catRes.data[0]}));
             }
-        } catch (err) => {
+        } catch (err) {
             console.error("Failed to fetch data", err);
             setError("Failed to load dashboard data. Please try again.");
         }
-    }, [page, searchQuery, form.category]); // Correct dependency array
+    }, [page, searchQuery]);
+    //fetchData function only recreated when page or searchQuery changes
 
     
     //calls fetchData whenever it's recreated and updates the dashboard when user changes pages or searches
