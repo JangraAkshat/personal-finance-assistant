@@ -56,6 +56,10 @@ npm install
 Set Up Environment Variables:
 Create a file named .env in the root of the project.
 
+
+
+See Demo.mp4 to see the working
+
 Run the application:
 This command will start both the backend server and the frontend React app concurrently.
 Bash:
