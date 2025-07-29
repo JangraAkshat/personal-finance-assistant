@@ -25,43 +25,77 @@ Pagination: The transaction list API is paginated, sending only 10 items at a ti
 
 Multi-User Support: The application supports multiple user accounts, with each user's data kept completely private and secure through JWT-based authorization.
 
-Tech Stack 🛠️
+
+
+Tech Stack 
+
 Frontend: React.js, Axios, Chart.js
+
 Backend: Node.js, Express.js
+
 Database: MongoDB with Mongoose
+
 Authentication: JSON Web Tokens (JWT)
+
 File Processing: Multer, Sharp (for image processing), PDF-Parse, Tesseract.js (for OCR)
 
+
+
 Getting Started (Setup & Installation)
+
 To get a local copy up and running, follow these simple steps.
 
+
+
 Prerequisites
+
 Node.js and npm
+
 MongoDB (a local server or a free MongoDB Atlas account)
+
 Git
 
+
+
 Installation
+
 Clone the repository:
 
 Bash:
+
 git clone https://github.com/JangraAkshat/personal-finance-assistant
+
 cd personal-finance-assistant
 
+
+
 Install all dependencies:
+
 This project uses a unified structure, so you only need to run the install command once from the root directory.
+
 Bash:
+
 npm install
 
+
+
 Set Up Environment Variables:
+
 Create a file named .env in the root of the project.
 
 
 
-See Demo.mp4 to see the working
 
 Run the application:
+
 This command will start both the backend server and the frontend React app concurrently.
+
 Bash:
+
 npm start
 
+
 Your application will be available at http://localhost:3000.
+
+
+See Demo.mp4 to see the working
