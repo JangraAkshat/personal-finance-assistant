@@ -194,7 +194,7 @@ function Dashboard() {
         const token = JSON.parse(localStorage.getItem('userInfo')).token;
         const config = { headers: { Authorization: `Bearer ${token}` } };
         try {
-            setError('');
+            setError(''); // Clear previous errors
             const [transRes, summaryRes, catRes] = await Promise.all([
                 axios.get(`/api/transactions?page=${page}&search=${searchQuery}`, config),
                 axios.get('/api/transactions/summary', config),
@@ -211,8 +211,7 @@ function Dashboard() {
             console.error("Failed to fetch data", err);
             setError("Failed to load dashboard data. Please try again.");
         }
-    }, [page, searchQuery]);
-    //fetchData function only recreated when page or searchQuery changes
+    }, [page, searchQuery, form.category]); // Correct dependency array
 
     
     //calls fetchData whenever it's recreated and updates the dashboard when user changes pages or searches
@@ -279,7 +278,7 @@ function Dashboard() {
         const formData = new FormData();
         formData.append('receipt', receiptFile);
         const token = JSON.parse(localStorage.getItem('userInfo')).token;
-        const config = { headers: { 'Content-Type': 'multipart/form-data', Authorization: `Bearer ${token}` } };
+        const config = { headers: { 'Content-Type': 'multipart-form-data', Authorization: `Bearer ${token}` } };
         try {
             const { data } = await axios.post('/api/transactions/upload-receipt', formData, config);
             setForm({ ...form, amount: data.amount.toFixed(2), description: data.description, type: 'expense' });
