@@ -207,7 +207,7 @@ function Dashboard() {
             if (catRes.data.length > 0 && !form.category) {
                 setForm(prev => ({...prev, category: catRes.data[0]}));
             }
-        } catch (err) {
+        } catch (err) => {
             console.error("Failed to fetch data", err);
             setError("Failed to load dashboard data. Please try again.");
         }
@@ -278,7 +278,7 @@ function Dashboard() {
         const formData = new FormData();
         formData.append('receipt', receiptFile);
         const token = JSON.parse(localStorage.getItem('userInfo')).token;
-        const config = { headers: { 'Content-Type': 'multipart-form-data', Authorization: `Bearer ${token}` } };
+        const config = { headers: { 'Content-Type': 'multipart/form-data', Authorization: `Bearer ${token}` } };
         try {
             const { data } = await axios.post('/api/transactions/upload-receipt', formData, config);
             setForm({ ...form, amount: data.amount.toFixed(2), description: data.description, type: 'expense' });
