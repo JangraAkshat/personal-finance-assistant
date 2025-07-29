@@ -1,7 +1,3 @@
-Understood. I have removed any mention of the company name and the live demo link.
-
-Here is the final, updated README.md file for your project.
-
 FinancePal - Personal Finance Assistant
 A full-stack web application designed to help users track, manage, and understand their financial activities.
 
